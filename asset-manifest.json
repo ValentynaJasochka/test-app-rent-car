@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://valentynajasochka.github.io/test-app-rent-car/static/css/main.63baa1eb.css",
-    "main.js": "https://valentynajasochka.github.io/test-app-rent-car/static/js/main.63ab31b7.js",
-    "static/js/544.e8772bc5.chunk.js": "https://valentynajasochka.github.io/test-app-rent-car/static/js/544.e8772bc5.chunk.js",
-    "static/js/425.6fdc7db0.chunk.js": "https://valentynajasochka.github.io/test-app-rent-car/static/js/425.6fdc7db0.chunk.js",
-    "static/js/634.46d42ac5.chunk.js": "https://valentynajasochka.github.io/test-app-rent-car/static/js/634.46d42ac5.chunk.js",
-    "static/css/24.810660c4.chunk.css": "https://valentynajasochka.github.io/test-app-rent-car/static/css/24.810660c4.chunk.css",
-    "index.html": "https://valentynajasochka.github.io/test-app-rent-car/index.html",
-    "static/media/heart.svg": "https://valentynajasochka.github.io/test-app-rent-car/static/media/heart.d5d9d93d491c509aca61b40e444ce941.svg",
-    "main.63baa1eb.css.map": "https://valentynajasochka.github.io/test-app-rent-car/static/css/main.63baa1eb.css.map",
-    "main.63ab31b7.js.map": "https://valentynajasochka.github.io/test-app-rent-car/static/js/main.63ab31b7.js.map",
-    "544.e8772bc5.chunk.js.map": "https://valentynajasochka.github.io/test-app-rent-car/static/js/544.e8772bc5.chunk.js.map",
-    "425.6fdc7db0.chunk.js.map": "https://valentynajasochka.github.io/test-app-rent-car/static/js/425.6fdc7db0.chunk.js.map",
-    "634.46d42ac5.chunk.js.map": "https://valentynajasochka.github.io/test-app-rent-car/static/js/634.46d42ac5.chunk.js.map",
-    "24.810660c4.chunk.css.map": "https://valentynajasochka.github.io/test-app-rent-car/static/css/24.810660c4.chunk.css.map"
+    "main.css": "/test-app-rent-car/static/css/main.63baa1eb.css",
+    "main.js": "/test-app-rent-car/static/js/main.109227fb.js",
+    "static/js/544.e8772bc5.chunk.js": "/test-app-rent-car/static/js/544.e8772bc5.chunk.js",
+    "static/js/425.fa2e29bb.chunk.js": "/test-app-rent-car/static/js/425.fa2e29bb.chunk.js",
+    "static/js/634.46d42ac5.chunk.js": "/test-app-rent-car/static/js/634.46d42ac5.chunk.js",
+    "static/css/24.810660c4.chunk.css": "/test-app-rent-car/static/css/24.810660c4.chunk.css",
+    "index.html": "/test-app-rent-car/index.html",
+    "static/media/heart.svg": "/test-app-rent-car/static/media/heart.d5d9d93d491c509aca61b40e444ce941.svg",
+    "main.63baa1eb.css.map": "/test-app-rent-car/static/css/main.63baa1eb.css.map",
+    "main.109227fb.js.map": "/test-app-rent-car/static/js/main.109227fb.js.map",
+    "544.e8772bc5.chunk.js.map": "/test-app-rent-car/static/js/544.e8772bc5.chunk.js.map",
+    "425.fa2e29bb.chunk.js.map": "/test-app-rent-car/static/js/425.fa2e29bb.chunk.js.map",
+    "634.46d42ac5.chunk.js.map": "/test-app-rent-car/static/js/634.46d42ac5.chunk.js.map",
+    "24.810660c4.chunk.css.map": "/test-app-rent-car/static/css/24.810660c4.chunk.css.map"
   },
   "entrypoints": [
     "static/css/main.63baa1eb.css",
-    "static/js/main.63ab31b7.js"
+    "static/js/main.109227fb.js"
   ]
 }
