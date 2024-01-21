@@ -24,6 +24,7 @@ const theme = {
     darkBlue: '#0B44CD',
     lightBlue: '#3470FF',
     white: '#FFFFFF',
+    grey: '#f9f9f9',
   }
 };
 

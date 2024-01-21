@@ -36,7 +36,7 @@ export const CarsList = () => {
       <SearchForm handleSearch={handelCarModelSearch} />
       <List>
         {filteredCars.map(
-          ({ id, model, img, type, description, year, rentalPrice, make,address, rentalCompany,functionalities }) => (
+          ({ id, model, img, type, description, year, rentalPrice, mileage, rentalConditions, make,address, rentalCompany,functionalities,fuelConsumption,accessories,  engineSize }) => (
             <CarItem
               key={id}
               model={model}
@@ -47,7 +47,12 @@ export const CarsList = () => {
               rentalCompany ={rentalCompany}
               rentalPrice={rentalPrice}
               img={img}
+              mileage={mileage}
+              accessories={accessories}
               functionalities={functionalities}
+              engineSize={engineSize}
+              fuelConsumption={fuelConsumption}
+              rentalConditions={rentalConditions}
               address={address}
               id={id}
             />

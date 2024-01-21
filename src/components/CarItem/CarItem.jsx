@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import {useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { selectFavorite } from '../../redux/selectors';
 
 import {
@@ -32,13 +32,18 @@ export const CarItem = ({
   address,
   rentalCompany,
   functionalities,
+  rentalConditions,
+  engineSize,
+  accessories,
+  fuelConsumption,
+  mileage,
   id,
 }) => {
   const city = address.split(',')[1];
   const country = address.split(',')[2];
   const [showModal, setShowModal] = useState(false);
-  const favoriteCarsID = useSelector(selectFavorite)
-  const isFavorite = favoriteCarsID.includes(id)
+  const favoriteCarsID = useSelector(selectFavorite);
+  const isFavorite = favoriteCarsID.includes(id);
 
   const dispatch = useDispatch();
 
@@ -57,8 +62,8 @@ export const CarItem = ({
         </ImgWrapper>
 
         <TextContainer>
-          <MainTextBlock>           
-              <MainTextInfo>{`${make}, ${year}`}</MainTextInfo>
+          <MainTextBlock>
+            <MainTextInfo>{`${make}, ${year}`}</MainTextInfo>
             <MainTextInfo>{rentalPrice}</MainTextInfo>
           </MainTextBlock>
           <TextBlock>
@@ -78,18 +83,31 @@ export const CarItem = ({
           Learn more
         </Btn>
 
-        <FavoriteBTN size={18} isFavorite={isFavorite} onClick={() => setFavorite(id)} />
+        <FavoriteBTN
+          size={18}
+          isFavorite={isFavorite}
+          onClick={() => setFavorite(id)}
+        />
       </Item>
 
       {showModal && (
         <Modal
           model={model}
+          city={city}
+          engineSize={engineSize}
+          country={country}
           type={type}
           description={description}
+          functionalities={functionalities}
           year={year}
           rentalPrice={rentalPrice}
+          accessories={accessories}
+          fuelConsumption={fuelConsumption}
+          rentalConditions={rentalConditions}
+          mileage={mileage}
           img={img}
           id={id}
+          make={make}
           onClose={toggleModal}
         />
       )}

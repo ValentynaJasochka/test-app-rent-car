@@ -54,7 +54,7 @@ export const TextInfo = styled.span`
   font-size: 12px;
   font-weight: 400;
   line-height: 1.3;
-  /* white-space: nowrap; */
+  white-space: nowrap;
 
   color: rgba(18, 20, 23, 0.5);
   &:not(:last-child)::after {
@@ -68,9 +68,10 @@ export const TextInfo = styled.span`
   }
 `;
 export const Btn = styled.button`
-  /* font-weight: 600; */
+width: 100%;
+  font-weight: 600;
   line-height: 1.43;
-  padding: 12px 99px;
+  padding: 12px 0;
   border-radius: 12px;
   border: none;
   color: ${props => props.theme.colors.white};
