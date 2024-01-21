@@ -1,6 +1,19 @@
-import { useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
+import {useSelector } from 'react-redux';
+import { selectFavorite } from '../../redux/selectors';
 
-import { Btn, FavoriteBTN, Img, ImgWrapper, Item } from './CarItem.styled';
+import {
+  Btn,
+  FavoriteBTN,
+  Img,
+  ImgWrapper,
+  Item,
+  MainTextBlock,
+  MainTextInfo,
+  TextBlock,
+  TextContainer,
+  TextInfo,
+} from './CarItem.styled';
 // import { ReactComponent as FavoriteMark } from '../../image/heart.svg';
 import { handleFavorite } from '../../redux/FavoriteSlice';
 
@@ -21,7 +34,11 @@ export const CarItem = ({
   functionalities,
   id,
 }) => {
+  const city = address.split(',')[1];
+  const country = address.split(',')[2];
   const [showModal, setShowModal] = useState(false);
+  const favoriteCarsID = useSelector(selectFavorite)
+  const isFavorite = favoriteCarsID.includes(id)
 
   const dispatch = useDispatch();
 
@@ -29,7 +46,6 @@ export const CarItem = ({
     setShowModal(showModal => !showModal);
   };
   const setFavorite = id => {
-   
     dispatch(handleFavorite(id));
   };
 
@@ -40,20 +56,29 @@ export const CarItem = ({
           <Img src={img} alt={description} />
         </ImgWrapper>
 
-        <p>
-          {make}
-          {year}
-          {rentalPrice}
-        </p>
-        <p>{address}
-         {rentalCompany}
-          {type} 
-          {model} 
-          {id} 
-          {functionalities[0]}</p>
-        <Btn type="button" onClick={toggleModal}>Learn more</Btn>
-       
-        <FavoriteBTN size={18} onClick={() => setFavorite(id)} />
+        <TextContainer>
+          <MainTextBlock>           
+              <MainTextInfo>{`${make}, ${year}`}</MainTextInfo>
+            <MainTextInfo>{rentalPrice}</MainTextInfo>
+          </MainTextBlock>
+          <TextBlock>
+            <TextInfo>{city}</TextInfo>
+            <TextInfo>{country}</TextInfo>
+            <TextInfo>{rentalCompany}</TextInfo>
+            <TextInfo>Premium</TextInfo>
+          </TextBlock>
+          <TextBlock>
+            <TextInfo>{type}</TextInfo>
+            <TextInfo>{model}</TextInfo>
+            <TextInfo>{id}</TextInfo>
+            <TextInfo>{functionalities[0]}</TextInfo>{' '}
+          </TextBlock>
+        </TextContainer>
+        <Btn type="button" onClick={toggleModal}>
+          Learn more
+        </Btn>
+
+        <FavoriteBTN size={18} isFavorite={isFavorite} onClick={() => setFavorite(id)} />
       </Item>
 
       {showModal && (
