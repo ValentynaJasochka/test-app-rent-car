@@ -17,7 +17,9 @@ export const CarsList = () => {
   const [model, setModel] = useState('');
 
   useEffect(() => {
-    dispatch(getCarsThunk(page));
+    if (cars.length === 0) {
+      dispatch(getCarsThunk(page));
+    }
   }, []);
 
   const onClickLoadMore = () => {
@@ -36,7 +38,24 @@ export const CarsList = () => {
       <SearchForm handleSearch={handelCarModelSearch} />
       <List>
         {filteredCars.map(
-          ({ id, model, img, type, description, year, rentalPrice, mileage, rentalConditions, make,address, rentalCompany,functionalities,fuelConsumption,accessories,  engineSize }) => (
+          ({
+            id,
+            model,
+            img,
+            type,
+            description,
+            year,
+            rentalPrice,
+            mileage,
+            rentalConditions,
+            make,
+            address,
+            rentalCompany,
+            functionalities,
+            fuelConsumption,
+            accessories,
+            engineSize,
+          }) => (
             <CarItem
               key={id}
               model={model}
@@ -44,7 +63,7 @@ export const CarsList = () => {
               description={description}
               year={year}
               make={make}
-              rentalCompany ={rentalCompany}
+              rentalCompany={rentalCompany}
               rentalPrice={rentalPrice}
               img={img}
               mileage={mileage}
