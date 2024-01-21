@@ -1,6 +1,8 @@
 
 // import { Loader } from 'components/Loader/Loader';
 
+import { Banner } from "./Home.styled";
+
 
 
 const Home = () => {
@@ -8,7 +10,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1>HOME</h1>
+      <h1>New Car Rental in Ukraine with Address Delivery within an Hour</h1>
+      <Banner></Banner>
       
       {/* {loading && <Loader />} */}
      
