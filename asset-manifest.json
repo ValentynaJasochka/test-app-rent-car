@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/test-app-rent-car/static/css/main.9317c9a7.css",
-    "main.js": "/test-app-rent-car/static/js/main.6a854407.js",
+    "main.js": "/test-app-rent-car/static/js/main.72bedd4b.js",
     "static/js/544.e8772bc5.chunk.js": "/test-app-rent-car/static/js/544.e8772bc5.chunk.js",
-    "static/js/250.2978138c.chunk.js": "/test-app-rent-car/static/js/250.2978138c.chunk.js",
-    "static/js/634.53690d94.chunk.js": "/test-app-rent-car/static/js/634.53690d94.chunk.js",
+    "static/js/250.62b4b3f1.chunk.js": "/test-app-rent-car/static/js/250.62b4b3f1.chunk.js",
+    "static/js/634.44cc6e4a.chunk.js": "/test-app-rent-car/static/js/634.44cc6e4a.chunk.js",
     "static/css/501.9b6e2d7f.chunk.css": "/test-app-rent-car/static/css/501.9b6e2d7f.chunk.css",
     "static/js/501.3662899f.chunk.js": "/test-app-rent-car/static/js/501.3662899f.chunk.js",
     "static/media/Manrope-SemiBold.ttf": "/test-app-rent-car/static/media/Manrope-SemiBold.33d2f89e0616126658af.ttf",
@@ -12,16 +12,17 @@
     "static/media/Manrope-Regular.ttf": "/test-app-rent-car/static/media/Manrope-Regular.b1d694f660569a9a9ee6.ttf",
     "index.html": "/test-app-rent-car/index.html",
     "static/media/heart.svg": "/test-app-rent-car/static/media/heart.cc532587dc2890feb0e45130c1787901.svg",
+    "static/media/x.svg": "/test-app-rent-car/static/media/x.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "main.9317c9a7.css.map": "/test-app-rent-car/static/css/main.9317c9a7.css.map",
-    "main.6a854407.js.map": "/test-app-rent-car/static/js/main.6a854407.js.map",
+    "main.72bedd4b.js.map": "/test-app-rent-car/static/js/main.72bedd4b.js.map",
     "544.e8772bc5.chunk.js.map": "/test-app-rent-car/static/js/544.e8772bc5.chunk.js.map",
-    "250.2978138c.chunk.js.map": "/test-app-rent-car/static/js/250.2978138c.chunk.js.map",
-    "634.53690d94.chunk.js.map": "/test-app-rent-car/static/js/634.53690d94.chunk.js.map",
+    "250.62b4b3f1.chunk.js.map": "/test-app-rent-car/static/js/250.62b4b3f1.chunk.js.map",
+    "634.44cc6e4a.chunk.js.map": "/test-app-rent-car/static/js/634.44cc6e4a.chunk.js.map",
     "501.9b6e2d7f.chunk.css.map": "/test-app-rent-car/static/css/501.9b6e2d7f.chunk.css.map",
     "501.3662899f.chunk.js.map": "/test-app-rent-car/static/js/501.3662899f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9317c9a7.css",
-    "static/js/main.6a854407.js"
+    "static/js/main.72bedd4b.js"
   ]
 }
