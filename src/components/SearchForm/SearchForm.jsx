@@ -1,11 +1,13 @@
 import { carsBrand } from '../../constants/searchForm';
 import { useState } from 'react';
-import { Button, Label,Form } from './SearchForm.styled';
+import { Button, Label, Form, Select, Headers, SelectPrise, Input } from './SearchForm.styled';
 import { toast } from 'react-toastify';
+
 
 const carsBrandTolowercase = carsBrand.map(el => el.toLocaleLowerCase());
 
 export const SearchForm = ({ handleSearch }) => {
+
   const [chosenModel, setChosenModel] = useState('');
 
   const handleChosenModel = event => {
@@ -30,37 +32,35 @@ export const SearchForm = ({ handleSearch }) => {
     <>
       <Form onSubmit={changeFilter}>
         <Label>
-          <div>Car brand</div>
-         <div>
-         <input
-            list="car-models"
-            name="brand"
-            placeholder="Enter the text"
-            value={chosenModel}
-            onChange={handleChosenModel}
-          />
-          <datalist id="car-models" value={chosenModel}>
-            {carsBrand.map(el => (
-              <option key ={el}>{el}</option>
-            ))}
-          </datalist>
-         </div>
+          <Headers>Car brand</Headers>
+          <div>          
+            <Select id="car-models" width="224px"  onChange={handleChosenModel}>
+              <option value="" disabled hidden>
+                Enter the text
+              </option>
+              {carsBrand.map(el => (
+                <option key={el} value={el} selected={el===chosenModel}>
+                  {el}
+                </option>
+              ))}
+            </Select>
+          </div>
         </Label>
 
         <Label>
-         <div> Prise/ 1 hour</div>
-          <select name="prise">
+          <Headers> Prise/ 1 hour</Headers>
+          <SelectPrise name="prise">
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="30">30</option>
             <option value="40">40</option>
-          </select>
+          </SelectPrise>
         </Label>
         <Label>
-         <div> Сar mileage/km</div>
+          <Headers> Сar mileage/km</Headers>
           <div>
-            <input type="text" name="from" placeholder="From" />
-          <input type="text" name="from" placeholder="To" />
+            <Input type="text" name="from" placeholder="From" />
+            <Input type="text" name="from" placeholder="To" />
           </div>
         </Label>
         <Button type="submit">Search</Button>
@@ -70,3 +70,5 @@ export const SearchForm = ({ handleSearch }) => {
 };
 
 export default SearchForm;
+
+

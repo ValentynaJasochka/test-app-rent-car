@@ -25,6 +25,7 @@ const theme = {
     lightBlue: '#3470FF',
     white: '#FFFFFF',
     grey: '#f9f9f9',
+    darkGrey:'#8A8A89',
   }
 };
 

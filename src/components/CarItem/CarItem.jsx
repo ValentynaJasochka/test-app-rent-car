@@ -14,10 +14,8 @@ import {
   TextContainer,
   TextInfo,
 } from './CarItem.styled';
-// import { ReactComponent as FavoriteMark } from '../../image/heart.svg';
 import { handleFavorite } from '../../redux/FavoriteSlice';
 
-// import { selectShowModal } from '../../redux/selectors';
 import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
 

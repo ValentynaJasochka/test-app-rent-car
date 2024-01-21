@@ -117,10 +117,3 @@ export const Modal = ({
   );
 };
 
-{
-  /* <Content>              
-      
-        <Btn href="tel:+380730000000">Rental car</Btn>
-        {/* {isModalOpen && <Modal close={closeModal} />} */
-}
-// </Content> */}

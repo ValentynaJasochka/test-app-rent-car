@@ -7,8 +7,7 @@ const Catalog = () => {
   const isLoading = useSelector(selectIsLoading) 
   return (
     <>
-      <BackLink >Go back</BackLink>
-     
+      <BackLink >Go back</BackLink>     
       <CarsList/>
       {isLoading && <Loader/>}
 

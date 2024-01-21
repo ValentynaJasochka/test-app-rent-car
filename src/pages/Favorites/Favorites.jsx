@@ -46,20 +46,26 @@ const FavoriteCars = () => {
      
       <List>
         {favoriteCars.map(
-          ({  id, model, img, type, description, year, rentalPrice, make,address, rentalCompany,functionalities  }) => (
+          ({ id, model, img, type, description, year, rentalPrice, mileage, rentalConditions, make,address, rentalCompany,functionalities,fuelConsumption,accessories,  engineSize }) => (
             <CarItem
             key={id}
-            model={model}
-            type={type}
-            description={description}
-            year={year}
-            make={make}
-            rentalCompany ={rentalCompany}
-            rentalPrice={rentalPrice}
-            img={img}
-            functionalities={functionalities}
-            address={address}
-            id={id}
+              model={model}
+              type={type}
+              description={description}
+              year={year}
+              make={make}
+              rentalCompany ={rentalCompany}
+              rentalPrice={rentalPrice}
+              img={img}
+              mileage={mileage}
+              accessories={accessories}
+              functionalities={functionalities}
+              engineSize={engineSize}
+              fuelConsumption={fuelConsumption}
+              rentalConditions={rentalConditions}
+              address={address}
+              id={id}
+            
             />
           )
         )}

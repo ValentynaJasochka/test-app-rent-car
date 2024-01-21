@@ -18,7 +18,7 @@ export const CarsList = () => {
 
   useEffect(() => {
     dispatch(getCarsThunk(page));
-  }, [dispatch, page]);
+  }, []);
 
   const onClickLoadMore = () => {
     setPage(page => page + 1);

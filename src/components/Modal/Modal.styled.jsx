@@ -17,7 +17,6 @@ export const CloseBtn= styled(CrossBtn)`
   position: absolute;
   top: 16px;
   right: 16px;
-  /* size: 24px; */
    cursor: pointer;
 `;
 export const ModalContainer = styled.div`
