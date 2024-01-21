@@ -40,6 +40,7 @@ export const MainTextBlock = styled.div`
 export const TextBlock = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   &:not(:last-child) {
     margin-bottom: 4px;
   }
@@ -53,7 +54,7 @@ export const TextInfo = styled.span`
   font-size: 12px;
   font-weight: 400;
   line-height: 1.3;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 
   color: rgba(18, 20, 23, 0.5);
   &:not(:last-child)::after {
@@ -67,12 +68,10 @@ export const TextInfo = styled.span`
   }
 `;
 export const Btn = styled.button`
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 1.43;
   padding: 12px 99px;
   border-radius: 12px;
-  justify-content: center;
-  align-items: center;
   border: none;
   color: ${props => props.theme.colors.white};
   cursor: pointer;
