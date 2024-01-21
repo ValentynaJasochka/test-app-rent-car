@@ -35,7 +35,7 @@ export const SearchForm = ({ handleSearch }) => {
           <Headers>Car brand</Headers>
           <div>          
             <Select id="car-models" width="224px"  onChange={handleChosenModel}>
-              <option value="" disabled hidden>
+              <option value="" >
                 Enter the text
               </option>
               {carsBrand.map(el => (

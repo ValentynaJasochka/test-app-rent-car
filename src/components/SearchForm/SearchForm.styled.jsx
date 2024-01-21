@@ -33,6 +33,18 @@ export const Select = styled.select`
   font-size: 18px;
   font-weight: 500;
   line-height: 1.11;
+  scrollbar-color: ${props => props.theme.colors.shadow};
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 8px;   
+    height: 130px;    
+    border-radius: 10px;
+  
+  }
 `;
 
 export const SelectPrise = styled.select`
@@ -49,7 +61,7 @@ export const SelectPrise = styled.select`
   font-weight: 500;
   line-height: 1.11;
 `;
-export const Input= styled.input`
+export const Input = styled.input`
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
